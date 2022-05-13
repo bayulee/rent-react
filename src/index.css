@@ -7,3 +7,41 @@
   height: 100vh;
   
   }
+  header{
+    height:80px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    opacity: 90%;
+  }
+  .img{
+border-radius: 40px; 
+  }
+  header nav{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+  }
+  header nav ul{
+   padding :20px 80px;
+   display: flex;
+   flex-direction:row;
+  }
+  h4{align-items: center;
+  margin:20px;}
+  nav ul li{
+    display: flex;
+    justify-content:space-evenly;
+    margin:10px 50px;
+    font-size: 25px;
+    color: white;
+ }
+ header nav ul li link{
+  text-decoration: none;
+
+ }

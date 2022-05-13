@@ -1,26 +1,34 @@
-import React from 'react'
-import logo from "../imgs/logo.jpg"
-import Link from "react"
+import React from "react";
+import logo from "../imgs/logo.jpg";
+import { Link } from "react-router-dom";
+
 function DashBoard() {
   return (
     <div>
-    <header>
-    <img src={logo} alt="logo" width="100px"className='img'/>
-    <nav>
-    <h1>HOUSE RENT MANAGEMENT APP. (WA MUNICIPAL)</h1>
-    <Link to={"/Login"}>Login</Link>
-    <Link to={"/Register"}>Register</Link>
-    
-    </nav>
-    </header>
-    <banner>
-    <div>
-    <img src="./imgs/logo.jpg" alt="logo"/>
-    <div>house management app</div>
+      <header>
+      <div>
+        <img src={logo} alt="logo" width="100px" height="80px" className="img" />
+        </div>
+        <nav>
+          <h4>HOUSE RENT MANAGEMENT APP. (WA MUNICIPAL)</h4>
+          <ul>
+          <li>
+          <Link to="/login">Login</Link>
+          </li>
+          <li>
+          <Link to="/register">Register</Link>
+          </li>
+          </ul>
+        </nav>
+      </header>
+      <banner>
+        <div>
+          <img src="./imgs/logo.jpg" alt="logo" />
+          <div>house management app</div>
+        </div>
+      </banner>
     </div>
-    </banner>
-    </div>
-  )
+  );
 }
 
-export default DashBoard
+export default DashBoard;

@@ -15,7 +15,7 @@ function AuthContextProvider({ children }) {
     await fetch("/api/users/login", {
       method: "POST",
       headers: {
-        "Context-Type": "application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         email,
@@ -36,7 +36,7 @@ function AuthContextProvider({ children }) {
   //signup function
   const authRegister = async (username, email, password) => {
     setLoading(true);
-    await fetch("/users/register", {
+    await fetch("/api/users/register", {
       method: "POST",
       headers: {
         "Context-Type": "application/json",
