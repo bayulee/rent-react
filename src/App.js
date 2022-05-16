@@ -8,9 +8,10 @@ import Home from "./screens/Home";
 function App() {
   return (
     <div>
-      <DashBoard />
+    
 
       <Routes>
+      <Route path="/" element={<DashBoard />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />

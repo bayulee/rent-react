@@ -9,24 +9,24 @@
   }
   header{
     height:80px;
-    color: white;
+    width: 100%;
+    color: wheat;
     background-color: black;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width:100%;
     opacity: 90%;
   }
   .img{
 border-radius: 40px; 
   }
-  header nav{
+ header nav{
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    width: 80%;
+    width: 30%;
     align-items: center;
-  }
+ }
+  
   header nav ul{
    padding :20px 80px;
    display: flex;
@@ -38,10 +38,61 @@ border-radius: 40px;
     display: flex;
     justify-content:space-evenly;
     margin:10px 50px;
-    font-size: 25px;
+    font-size: 18px;
     color: white;
  }
- header nav ul li link{
-  text-decoration: none;
+.navigation li {
+  display:inline;
+}
+.header{
+  display: flex;
+  width:90%;
+  padding: 10px;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+}
 
- }
+.landingpage{
+  height:90vh;
+  width: 100%;
+  background-image: url("./imgs/house1.webp");
+  background-size: cover;
+  background-position: center;
+  opacity: 90%;
+}
+.heroText{
+  width:500px;
+  margin:5rem auto;
+  color:white;
+  border: 2px solid silver;
+  padding:10px;
+  background:black;
+  opacity: 60%;
+  border-radius: 5px;
+}
+h2{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+p{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+footer{
+  background-color: black;
+  height: 80px;
+}
+.footer-copyright{
+    display: flex;
+    color:wheat;
+    text-decoration: none;
+    justify-content: space-evenly;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.footer-copyright a{
+color:wheat;
+text-decoration: none;
+}
